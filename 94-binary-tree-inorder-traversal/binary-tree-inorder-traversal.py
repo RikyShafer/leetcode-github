@@ -12,16 +12,16 @@ class Solution(object):
         """
         sol=[]
 
-        def er(root):
+        def raversal(root):
 
             if root is None:
                 return sol
             if root.left:
-                er(root.left) 
+                raversal(root.left) 
             sol.append(root.val)    
             if root.right:
-                er(root.right) 
-        er(root)        
+                raversal(root.right) 
+        raversal(root)        
         return sol
         
 
